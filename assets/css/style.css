@@ -661,6 +661,9 @@ footer .copyright{
 
 
 /* testimonial-section */
+.testimonial-section{
+    padding: 0px 10px;
+}
 .testimonial-section .jadoo-sm-head{
     text-align: left;
 }
@@ -668,28 +671,84 @@ footer .copyright{
     text-align: left;
 }
 .swiper {
-    width: 100%;
-    height: 300px;
-  }
+    height: 400px;
+}
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
+
+.swiper{
+    width: 100%;
+}
+.swiper-slide{
+    padding: 10px 40px 0px 20px;
+}
+
+.testimonial-box{
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
     height: 100%;
-    object-fit: cover;
-  }
-  .swiper-backface-hidden .swiper-slide{
-      margin-top: -30px;
-  }
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    height: 260px;
+}
+
+.testimonial-img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+}
+
+.testimonial-box p{
+    font-size: 16px;
+    color: var(--para-col);
+}
+.testimonial-box .author-section h6{
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--para-col);
+    font-weight: 600;
+}
+.testimonial-box .author-section p{
+    font-size: 14px;
+}
+.swiper-pagination{
+    left: -30% !important;
+
+}
+
+.swiper-arrows .swiper-button-next{
+    position: absolute;
+    right: 0px;
+    rotate: 360deg;
+    color: var(--para-col);
+    padding-bottom: 50px;
+}
+.swiper-arrows .swiper-button-prev{
+    position: absolute;
+    right: 0px;
+    left: unset;
+}
+
+.swiper-button-prev:after{
+    content: '';
+    background-image: url('../images/testimonial/bottom-arrow.png');
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.swiper-button-next:after{
+    content: '';
+    background-image: url('../images/testimonial/top-arrow.png');
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 
 
@@ -810,6 +869,12 @@ footer .copyright{
     .subcribe-box .input-box{
         display: flex;
         margin-bottom: 20px;
+    }
+    .testimonial-section{
+        padding: 50px 10px;
+    }
+    .swiper-slide {
+        padding: 10px 20px 0px 10px;
     }
 
 }
