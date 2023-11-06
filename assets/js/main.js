@@ -1,3 +1,10 @@
+// loader
+$(document).ready(function(){
+    setTimeout(()=> {
+        $('.loader').remove();
+    } , 1200);
+});
+  
 // svg fill
 document.getElementById("my-svg").addEventListener("click", function() {
     var path = this.querySelector("path");
